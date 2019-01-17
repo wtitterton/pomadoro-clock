@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1 class="title">Pomodoro clock</h1>
+			<div class="workController">
+			   <h4>Work period</h4>
+			   <button class="decre"><</button>
+			  <input type="text" name="workPeriod" id="workConOutput" value="25">
+			  <button class="incre">></button>
+			</div>
+			<div class="breakController">
+			  <h4>Break period</h4>
+			  <button class="decre"><</button>
+			  <input type="text" name="breakPeriod" id="breakConOutput" value="5">
+			  <button class="incre">></button>
+			</div>
+			
+			  <!-- <canvas id="myCanvas" width="200" height="200"></canvas> -->
+			  <div class="timers">
+			  	<h1 class="workCountDown animated zoomInDown">25:00</h1>
+			  	<h1 class="breakCountDown animated" style="display:none;">5:00</h1>
+			  	<h3 class="clockShowing">Work</h3>
+			  	
+			  </div>
+			  <div class="prog-bar">
+			  		<div id="myBar"></div>
+			  		<h5 class="progDial">0%</h5>
+			  </div>
+
+			 
+			  <h6 class="start" ><i class="fa fa-play" aria-hidden="true"></i></h6>
+			  <h6 class="reset"><i class="fa fa-stop" aria-hidden="true"></i></h6>
+		</div>  
+		<script src="https://use.fontawesome.com/c0faa70aff.js"></script>
+		<script src="prog.js"></script>
+		<script src="controller.js"></script>
+		<script src="timer.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
